@@ -8,16 +8,7 @@ namespace MainMenu.Text
     {
         public static string[][] WordsNumbers(string[][] dataText, int x = 11, int i = 0)
         {
-            dataText[x][i++] = "один\n";
-            dataText[x][i++] = "два\n";
-            dataText[x][i++] = "три\n";
-            dataText[x][i++] = "четыре\n";
-            dataText[x][i++] = "пять\n";
-            dataText[x][i++] = "шесть\n";
-            dataText[x][i++] = "семь\n";
-            dataText[x][i++] = "восемь\n";
-            dataText[x][i++] = "девять\n";
-            dataText[x][i++] = "Десять\n";
+            dataText[x][i++] = "Десять";
             dataText[x][i++] = "Одиннадцать";
             dataText[x][i++] = "Двенадцать";
             dataText[x][i++] = "Тринадцать";
@@ -34,7 +25,16 @@ namespace MainMenu.Text
             dataText[x][i++] = "Шестьдесят";
             dataText[x][i++] = "Семьдесят";
             dataText[x][i++] = "Восемьдесят";
-            dataText[x][i] = "Девяносто";
+            dataText[x][i++] = "Девяносто";
+            dataText[x][i++] = "один\n";
+            dataText[x][i++] = "два\n";
+            dataText[x][i++] = "три\n";
+            dataText[x][i++] = "четыре\n";
+            dataText[x][i++] = "пять\n";
+            dataText[x][i++] = "шесть\n";
+            dataText[x][i++] = "семь\n";
+            dataText[x][i++] = "восемь\n";
+            dataText[x][i] = "девять\n";
 #if DEBUG
             Console.WriteLine($"Размер dataText[{x}][{i}]");
 #endif

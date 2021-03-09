@@ -71,15 +71,23 @@ namespace MainMenu
                 programClass.dataTextClass.comPhraseString++;
                 programClass.dataQueriesClass = DataQueries.DQC_Number_4(programClass, number_4);
             }
-
-            string result = Calculations(programClass);
-            if (result != null)
+            if (programClass.dataTextY == 5 && programClass.section == 2)
             {
-                Fill_In.DataOutputString(dataText, programClass, result);
+                double[] tmp = CalculationsSections(programClass);
+                Fill_In.DataStringTo_2_5(dataText, programClass, tmp);
             }
-            else
+
+            if (programClass.dataTextY != 5 && programClass.section != 2)
             {
-                Fill_In.StringOut(dataText, programClass);
+                string result = Calculations(programClass);            
+                if (result != null)
+                {
+                    Fill_In.DataOutputString(dataText, programClass, result);
+                }
+                else
+                {
+                    Fill_In.StringOut(dataText, programClass);
+                }
             }
             //string resultTmp = Calculations(programClass);
         }

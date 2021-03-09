@@ -42,7 +42,8 @@ namespace MainMenu
         }
 
         static void Main(string[] args)
-        {    //ssss.Test();  //Нужно потестить с Максом
+        {   
+            //ssss.Test();  //Нужно потестить с Максом
             programClass.dataTextClass = DataText.DataTextC();
             programClass.dataQueriesClass = DataQueries.DataQueriesC();
             dataText = Start(dataText);

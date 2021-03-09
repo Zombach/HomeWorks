@@ -40,9 +40,9 @@ namespace MainMenu.Text
             dataText[x][i++] = "\nЧетвертой четверти принадлежит точка с координатами: ";
             dataText[x][i++] = "\nТочка лежит на оси с координатами";
             dataText[x][i++] = "\nЧисла А В С в порядке возврастания: ";
-            dataText[x][i++] = "\nssssss";
-            dataText[x][i++] = "\n";
-            dataText[x][i++] = "\n";
+            dataText[x][i++] = "\nКорни уравнения равны: ";
+            dataText[x][i++] = "\nУ данного уравнения нет корней";
+            dataText[x][i++] = "\nДанное уравнение не квадратное!";
             dataText[x][i++] = "\n";
             dataText[x][i++] = "\n";
             dataText[x][i++] = "\n";

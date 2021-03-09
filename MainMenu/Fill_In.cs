@@ -39,6 +39,17 @@ namespace MainMenu
             
         }
 
+        public static void DataStringTo_2_5(string[][] dataText, ProgramClass programClass, double[] tmp)
+        {
+            programClass.dataTextClass.answer = 11;
+            Console.Write("\n");
+            for (int i = tmp.Length - 1; i >= 0; i--)
+            {
+                Console.Write(dataText[programClass.dataTextClass.answer][(int)tmp[i]] + " ");
+            }
+        }
+
+
         public static void OutputString(string[][] dataText, ProgramClass programClass)
         {
             Console.Write("\n\n\n");
