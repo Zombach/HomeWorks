@@ -4646,11 +4646,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ZLoo\\Documents\\Visual Studio 2019\\Cracken\\HomeWorks\\MainMenu.Tests\\MainMenu.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\ZLoo\\Source\\Repos\\HomeWorks\\MainMenu.Tests\\MainMenu.Tests.csproj",
       "projectName": "MainMenu.Tests",
-      "projectPath": "C:\\Users\\ZLoo\\Documents\\Visual Studio 2019\\Cracken\\HomeWorks\\MainMenu.Tests\\MainMenu.Tests.csproj",
+      "projectPath": "C:\\Users\\ZLoo\\Source\\Repos\\HomeWorks\\MainMenu.Tests\\MainMenu.Tests.csproj",
       "packagesPath": "C:\\Users\\ZLoo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ZLoo\\Documents\\Visual Studio 2019\\Cracken\\HomeWorks\\MainMenu.Tests\\obj\\",
+      "outputPath": "C:\\Users\\ZLoo\\Source\\Repos\\HomeWorks\\MainMenu.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -4673,8 +4673,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\ZLoo\\Documents\\Visual Studio 2019\\Cracken\\HomeWorks\\MainMenu\\MainMenu.csproj": {
-              "projectPath": "C:\\Users\\ZLoo\\Documents\\Visual Studio 2019\\Cracken\\HomeWorks\\MainMenu\\MainMenu.csproj"
+            "C:\\Users\\ZLoo\\Source\\Repos\\HomeWorks\\MainMenu\\MainMenu.csproj": {
+              "projectPath": "C:\\Users\\ZLoo\\Source\\Repos\\HomeWorks\\MainMenu\\MainMenu.csproj"
             }
           }
         }

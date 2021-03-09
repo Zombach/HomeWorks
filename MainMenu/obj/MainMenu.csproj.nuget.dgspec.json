@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ZLoo\\Documents\\Visual Studio 2019\\Cracken\\HomeWorks\\MainMenu\\MainMenu.csproj": {}
+    "C:\\Users\\ZLoo\\Source\\Repos\\HomeWorks\\MainMenu\\MainMenu.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ZLoo\\Documents\\Visual Studio 2019\\Cracken\\HomeWorks\\MainMenu\\MainMenu.csproj": {
+    "C:\\Users\\ZLoo\\Source\\Repos\\HomeWorks\\MainMenu\\MainMenu.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ZLoo\\Documents\\Visual Studio 2019\\Cracken\\HomeWorks\\MainMenu\\MainMenu.csproj",
+        "projectUniqueName": "C:\\Users\\ZLoo\\Source\\Repos\\HomeWorks\\MainMenu\\MainMenu.csproj",
         "projectName": "MainMenu",
-        "projectPath": "C:\\Users\\ZLoo\\Documents\\Visual Studio 2019\\Cracken\\HomeWorks\\MainMenu\\MainMenu.csproj",
+        "projectPath": "C:\\Users\\ZLoo\\Source\\Repos\\HomeWorks\\MainMenu\\MainMenu.csproj",
         "packagesPath": "C:\\Users\\ZLoo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ZLoo\\Documents\\Visual Studio 2019\\Cracken\\HomeWorks\\MainMenu\\obj\\",
+        "outputPath": "C:\\Users\\ZLoo\\Source\\Repos\\HomeWorks\\MainMenu\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

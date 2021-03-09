@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ie4ODjfSRMEBMxKhGReRNdEFav5qRpl4CDFxn57qiwIcldASWNcwXMAmBMhPgRNaEeOK6OoHF7NCtwN9JTOlcg==",
+  "dgSpecHash": "W8lCGqaSfVTUJeatuI9n1ZNqbg7FFCjx8/b31FkA4wD/lTozokqkkeQFy0rJv+PBrGvXTBzCcO2zOxxyMPzYNg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ZLoo\\Documents\\Visual Studio 2019\\Cracken\\HomeWorks\\MainMenu.Tests\\MainMenu.Tests.csproj",
+  "projectFilePath": "C:\\Users\\ZLoo\\Source\\Repos\\HomeWorks\\MainMenu.Tests\\MainMenu.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ZLoo\\.nuget\\packages\\microsoft.codecoverage\\16.5.0\\microsoft.codecoverage.16.5.0.nupkg.sha512",
     "C:\\Users\\ZLoo\\.nuget\\packages\\microsoft.csharp\\4.0.1\\microsoft.csharp.4.0.1.nupkg.sha512",
