@@ -56,43 +56,31 @@ namespace MainMenu.Quest
         private static double[] Quest_1(ProgramClass programClass)
         {
             double[] tmp = new double[1];
-            tmp[0] = (5 * programClass.dataQueriesClass.number_1 + programClass.dataQueriesClass.number_2 * programClass.dataQueriesClass.number_2) /
-                (programClass.dataQueriesClass.number_2 - programClass.dataQueriesClass.number_1);
+            tmp[0] = 1;
+            for (int i = 0; i < programClass.dataQueriesClass.number_2; i++)
+            {
+                tmp[0] *= programClass.dataQueriesClass.number_1;
+            }
+            for (int i = 0; i > programClass.dataQueriesClass.number_2; i--)
+            {
+                tmp[0] /= programClass.dataQueriesClass.number_1;
+            }
             return tmp;
-            //Double result = 1;
-
-            //Console.Write("Введите число A = ");
-            //Double a = ConsoleInPut.InPutDouble();
-            //Console.Write("Введите число B = ");
-            //Double b = ConsoleInPut.InPutDouble();
-
-            //for (int i = 0; i < b; i++)
-            //{
-            //    result *= a;
-            //}
-            //for (int i = 0; i > b; i--)
-            //{
-            //    result /= a;
-            //}
-            //Console.WriteLine($"Число A в степени В = {result}");
-            //Console.WriteLine();
         }
         private static double[] Quest_2(ProgramClass programClass)
         {
-            double[] tmp = new double[1];
-            tmp[0] = (5 * programClass.dataQueriesClass.number_1 + programClass.dataQueriesClass.number_2 * programClass.dataQueriesClass.number_2) /
-                (programClass.dataQueriesClass.number_2 - programClass.dataQueriesClass.number_1);
-            return tmp;
-            //Console.Write("Введите число A = ");
-            //int a = ConsoleInPut.InPutInt();
-            //for (int i = 1; i <= 1000; i++)
-            //{
-            //    if (i % a == 0)
-            //    {
-            //        Console.Write(i + " ");
-            //    }
-            //}
-            //Console.WriteLine("\n");
+            int j = 0;
+            double[] tmp = new double[1000];
+            for (int i = 1; i <= 1000; i++)
+            {
+                if (i % programClass.dataQueriesClass.number_1 == 0)
+                {
+                    tmp[j++] = i;
+                }
+            }
+            double[] tmp2 = new double[j];
+            Array.Copy(tmp, tmp2, j);
+            return tmp2;
         }
         private static double[] Quest_3(ProgramClass programClass)
         {

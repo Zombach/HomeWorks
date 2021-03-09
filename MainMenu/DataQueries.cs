@@ -122,7 +122,6 @@ namespace MainMenu
                     count = 3;
                     break;
                 case 5:
-                    // programClass.dataTextClass.comPhraseString = 7;
                     count = 1;
                     break;
                 default:
@@ -139,7 +138,7 @@ namespace MainMenu
                     count = 2;
                     break;
                 case 2:
-                    count = 2;
+                    count = 1;
                     break;
                 case 3:
                     count = 2;
