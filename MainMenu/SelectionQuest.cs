@@ -73,8 +73,13 @@ namespace MainMenu
             }
 
             string result = Calculations(programClass);
+            if (result != null)
+            {
+                Fill_In.DataOutputString(dataText, programClass, result);
+            }
+            Fill_In.StringOut(dataText, programClass);
             //string resultTmp = Calculations(programClass);
-            Fill_In.DataOutputString(dataText, programClass, result);
+
         }
 
         private static string Calculations(ProgramClass programClass)

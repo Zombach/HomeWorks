@@ -31,6 +31,14 @@ namespace MainMenu
                 Console.Write("\n\n\n");
             }
         }
+
+        public static void StringOut(string[][] dataText, ProgramClass programClass)
+        {
+            Console.Write("\n" + dataText[programClass.dataTextClass.answer][programClass.dataTextClass.answerString]);
+            Console.Write("\n\n\n");
+            
+        }
+
         public static void OutputString(string[][] dataText, ProgramClass programClass)
         {
             Console.Write("\n\n\n");
