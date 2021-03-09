@@ -34,149 +34,102 @@ namespace MainMenu.Quest
         private static double[] Quest_1(ProgramClass programClass)
         {
             double[] tmp = new double[1];
-            tmp[0] = (5 * programClass.dataQueriesClass.number_1 + programClass.dataQueriesClass.number_2 * programClass.dataQueriesClass.number_2) /
-                (programClass.dataQueriesClass.number_2 - programClass.dataQueriesClass.number_1);
-            return tmp;
-            //int sum;
-            //Console.Write("Введите число A = ");
-            //int a = ConsoleInPut.InPutInt();
-            //Console.Write("Введите число B = ");
-            //int b = ConsoleInPut.InPutInt();
-
-            //if (a > b) sum = a + b;
-            //else if (a == b) sum = a * b;
-            //else sum = a - b;
-
-            //Console.WriteLine($"Результат вычеслений = {sum}");
+            if (programClass.dataQueriesClass.number_1 > programClass.dataQueriesClass.number_2)
+            {
+                tmp[0] = programClass.dataQueriesClass.number_1 + programClass.dataQueriesClass.number_2;
+            }
+            else if (programClass.dataQueriesClass.number_1 == programClass.dataQueriesClass.number_2)
+            {
+                programClass.dataTextClass.answerString++;
+                tmp[0] = programClass.dataQueriesClass.number_1 * programClass.dataQueriesClass.number_2;
+            }
+            else if (programClass.dataQueriesClass.number_1 < programClass.dataQueriesClass.number_2)
+            {
+                programClass.dataTextClass.answerString++;
+                programClass.dataTextClass.answerString++;
+                tmp[0] = programClass.dataQueriesClass.number_1 - programClass.dataQueriesClass.number_2;
+            }
+            return tmp;            
         }
         private static double[] Quest_2(ProgramClass programClass)
         {
+            programClass.dataTextClass.answerString = 4;
             double[] tmp = new double[1];
-            tmp[0] = (5 * programClass.dataQueriesClass.number_1 + programClass.dataQueriesClass.number_2 * programClass.dataQueriesClass.number_2) /
-                (programClass.dataQueriesClass.number_2 - programClass.dataQueriesClass.number_1);
+            if (programClass.dataQueriesClass.number_1 > 0)
+            {
+                if (programClass.dataQueriesClass.number_2 > 0)
+                {
+                    tmp[0] = 1;
+                }
+                else
+                {
+                    tmp[0] = 4;
+                    programClass.dataTextClass.answerString += 3;
+                }
+            }
+            else if (programClass.dataQueriesClass.number_1 < 0)
+            {
+                if (programClass.dataQueriesClass.number_2 > 0)
+                {
+                    tmp[0] = 2;
+                    programClass.dataTextClass.answerString++;
+                }
+                else
+                {
+                    tmp[0] = 3;
+                    programClass.dataTextClass.answerString += 2;
+                }
+            }
+            else if (programClass.dataQueriesClass.number_1 == 0 ||
+                programClass.dataQueriesClass.number_2 == 0)
+            {
+                tmp = null;
+                programClass.dataTextClass.answerString += 4;
+            }        
             return tmp;
-            //int quarter = 0;
-            //Console.Write("Введите число X = ");
-            //int x = ConsoleInPut.InPutInt();
-            //Console.Write("Введите число Y = ");
-            //int y = ConsoleInPut.InPutInt();
-
-            //Random rnd = new Random();
-            //int value = rnd.Next(0, 9);
-            //if (value > 4)
-            //{
-            //    if (x >= 0 && y >= 0)
-            //    {
-            //        quarter = 1;
-            //    }
-            //    else if (x > 0 && y < 0)
-            //    {
-            //        quarter = 4;
-            //    }
-            //    else if (x < 0 && y < 0)
-            //    {
-            //        quarter = 3;
-            //    }
-            //    else
-            //    {
-            //        quarter = 2;
-            //    }
-            //}
-            //else
-            //{
-            //    if (x >= 0)
-            //    {
-            //        if (y >= 0)
-            //        {
-            //            quarter = 1;
-            //        }
-            //        else
-            //        {
-            //            quarter = 4;
-            //        }
-            //    }
-            //    else if (x < 0)
-            //    {
-            //        if (y >= 0)
-            //        {
-            //            quarter = 2;
-            //        }
-            //        else
-            //        {
-            //            quarter = 3;
-            //        }
-            //    }
-            //}
-
-            //Console.WriteLine($"Точка принадлежит {quarter} четверти");
         }
         private static double[] Quest_3(ProgramClass programClass)
         {
-            double[] tmp = new double[1];
-            tmp[0] = (5 * programClass.dataQueriesClass.number_1 + programClass.dataQueriesClass.number_2 * programClass.dataQueriesClass.number_2) /
-                (programClass.dataQueriesClass.number_2 - programClass.dataQueriesClass.number_1);
+            programClass.dataTextClass.answerString = 9;
+            double[] tmp = new double[3];
+            if (programClass.dataQueriesClass.number_1 > programClass.dataQueriesClass.number_2)
+            {
+                tmp[0] = programClass.dataQueriesClass.number_1;
+                programClass.dataQueriesClass.number_1 = programClass.dataQueriesClass.number_2;
+                programClass.dataQueriesClass.number_2 = (int )tmp[0];
+            }
+            if (programClass.dataQueriesClass.number_1 > programClass.dataQueriesClass.number_3)
+            {
+                tmp[1] = programClass.dataQueriesClass.number_1;
+                programClass.dataQueriesClass.number_1 = programClass.dataQueriesClass.number_3;
+                programClass.dataQueriesClass.number_3 = (int)tmp[1];
+            }
+            if (programClass.dataQueriesClass.number_2 > programClass.dataQueriesClass.number_3)
+            {
+                tmp[2] = programClass.dataQueriesClass.number_2;
+                programClass.dataQueriesClass.number_2 = programClass.dataQueriesClass.number_3;
+                programClass.dataQueriesClass.number_3 = (int)tmp[2];
+            }
+            tmp[0] = programClass.dataQueriesClass.number_1;
+            tmp[1] = programClass.dataQueriesClass.number_2;
+            tmp[2] = programClass.dataQueriesClass.number_3;
             return tmp;
-            //int tmp;
-
-            //Console.Write("Введите число A = ");
-            //int a = ConsoleInPut.InPutInt();
-            //Console.Write("Введите число B = ");
-            //int b = ConsoleInPut.InPutInt();
-            //Console.Write("Введите число C = ");
-            //int c = ConsoleInPut.InPutInt();
-
-            //if (a > b)
-            //{
-            //    tmp = a;
-            //    a = b;
-            //    b = tmp;
-            //}
-            //if (a > c)
-            //{
-            //    tmp = a;
-            //    a = c;
-            //    c = tmp;
-            //}
-            //if (b > c)
-            //{
-            //    tmp = b;
-            //    b = c;
-            //    c = tmp;
-            //}
-
-            //Console.WriteLine($"В порядке возврастания {a}, {b}, {c}");
         }
         private static double[] Quest_4(ProgramClass programClass)
         {
-            double[] tmp = new double[1];
-            tmp[0] = (5 * programClass.dataQueriesClass.number_1 + programClass.dataQueriesClass.number_2 * programClass.dataQueriesClass.number_2) /
-                (programClass.dataQueriesClass.number_2 - programClass.dataQueriesClass.number_1);
+            double[] tmp = new double[2];
+            tmp[0] = programClass.dataQueriesClass.number_2 * programClass.dataQueriesClass.number_2 + 4 * programClass.dataQueriesClass.number_1 * programClass.dataQueriesClass.number_3;
+
+            if (tmp[0] > 0)
+            {
+                tmp[0] = (-programClass.dataQueriesClass.number_2 + Math.Sqrt(tmp[0])) / (2 * programClass.dataQueriesClass.number_1);
+                tmp[1] = (-programClass.dataQueriesClass.number_2 - Math.Sqrt(tmp[0])) / (2 * programClass.dataQueriesClass.number_1);
+            }
+            else
+            {
+                tmp = null;
+            }
             return tmp;
-            //double a;
-            //double b;
-            //double c;
-            //double equal;
-
-            //Console.Write("Введите число A = ");
-            //a = Convert.ToDouble(Console.ReadLine());
-            //Console.Write("Введите число B = ");
-            //b = Convert.ToDouble(Console.ReadLine());
-            //Console.Write("Введите число C = ");
-            //c = Convert.ToDouble(Console.ReadLine());
-
-            //equal = b * b + 4 * a * c;
-
-            //if (equal > 0)
-            //{
-            //    double x1 = (-b + Math.Sqrt(equal)) / (2 * a);
-            //    double x2 = (-b - Math.Sqrt(equal)) / (2 * a);
-            //    Console.WriteLine("Первый корень x1 = " + x1);
-            //    Console.WriteLine("Второй корень x2 = " + x2);
-            //}
-            //else
-            //{
-            //    Console.WriteLine("У данного уровнения нет корней");
-            //}
         }
         private static double[] Quest_5(ProgramClass programClass)
         {

@@ -2,12 +2,22 @@
 
 namespace MainMenu.Tests
 {
-    public class Tests
+    public class ssssTests
     {
-        [Test]
-        public void ssssTests()
+        [TestCase]
+        [TestCase]
+        [TestCase]
+        public void testtt()
         {
-            Assert.Pass();
+            //arrage
+
+
+            //act
+
+
+            //assert
+
+
         }
     }
 }

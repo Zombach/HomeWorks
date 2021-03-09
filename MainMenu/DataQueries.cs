@@ -122,7 +122,7 @@ namespace MainMenu
                     count = 3;
                     break;
                 case 5:
-                    programClass.dataTextClass.comPhraseString = 7;
+                    // programClass.dataTextClass.comPhraseString = 7;
                     count = 1;
                     break;
                 default:

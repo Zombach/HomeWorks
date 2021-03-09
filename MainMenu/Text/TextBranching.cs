@@ -31,6 +31,18 @@ namespace MainMenu.Text
         public static string[][] BranchingTextAnswers(string[][] dataText, int x = 4, int i = 0)
         {
             dataText[x][i++] = "\nОтвет: ";
+            dataText[x][i++] = "\nРаз А > B то сумма А + B = ";
+            dataText[x][i++] = "\nРаз А = B то произведение А * B = ";
+            dataText[x][i++] = "\nРаз А < B то разность А - B = ";
+            dataText[x][i++] = "\nПервой четверти принадлежит точка с координатами: ";
+            dataText[x][i++] = "\nВторой четверти принадлежит точка с координатами: ";
+            dataText[x][i++] = "\nТретий четверти принадлежит точка с координатами: ";
+            dataText[x][i++] = "\nЧетвертой четверти принадлежит точка с координатами: ";
+            dataText[x][i++] = "\nТочка лежит на оси с координатами";
+            dataText[x][i++] = "\nЧисла А В С в порядке возврастания: ";
+            dataText[x][i++] = "\nssssss";
+            dataText[x][i++] = "\n";
+            dataText[x][i++] = "\n";
             dataText[x][i++] = "\n";
             dataText[x][i++] = "\n";
             dataText[x][i++] = "\n";

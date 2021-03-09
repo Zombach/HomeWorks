@@ -42,8 +42,18 @@ namespace MainMenu
         }
         private static string InputReplace(string str)
         {
+            string tmp = "-";
+            bool bo = false;
+            if (str[0] == '-')
+            {
+                bo = true;
+            }
             Regex regex = new Regex(@"\D");
             str = regex.Replace(str, string.Empty);
+            if (bo == true)
+            {
+                str = tmp + str;
+            }
             return str;
         }
         private static string InputTrim(string str)

@@ -18,7 +18,6 @@ namespace MainMenu
         public static DataTextClass dataTextClass = new DataTextClass();
         public static DataQueriesClass dataQueriesClass = new DataQueriesClass();
         static string[][] dataText;
-        
         public static ProgramClass ProgramC(ProgramClass programClass, int Section = 0, int dataTextX = 0, int dataTextY = 0)
         {
             programClass.section = Section;            

@@ -77,9 +77,11 @@ namespace MainMenu
             {
                 Fill_In.DataOutputString(dataText, programClass, result);
             }
-            Fill_In.StringOut(dataText, programClass);
+            else
+            {
+                Fill_In.StringOut(dataText, programClass);
+            }
             //string resultTmp = Calculations(programClass);
-
         }
 
         private static string Calculations(ProgramClass programClass)
@@ -91,7 +93,7 @@ namespace MainMenu
 
         private static double[] CalculationsSections(ProgramClass programClass)
         {
-            double[] tmp = null; ;
+            double[] tmp = null;
             switch (programClass.section)
             {
                 case 1:
