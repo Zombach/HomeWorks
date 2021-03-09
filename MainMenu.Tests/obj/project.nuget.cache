@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "W8lCGqaSfVTUJeatuI9n1ZNqbg7FFCjx8/b31FkA4wD/lTozokqkkeQFy0rJv+PBrGvXTBzCcO2zOxxyMPzYNg==",
+  "dgSpecHash": "0P+1VgIcINblpLRM9Pj/RGiRPgPXTDJ7p/Lq3Vb/uv2qE6BcL4mvLZNTL05P9Tzwvy74Gcp+HLNtSNpyIT2l7Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ZLoo\\Source\\Repos\\HomeWorks\\MainMenu.Tests\\MainMenu.Tests.csproj",
+  "projectFilePath": "C:\\Users\\ZLoo\\source\\Repos\\HomeWorks\\MainMenu.Tests\\MainMenu.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ZLoo\\.nuget\\packages\\microsoft.codecoverage\\16.5.0\\microsoft.codecoverage.16.5.0.nupkg.sha512",
     "C:\\Users\\ZLoo\\.nuget\\packages\\microsoft.csharp\\4.0.1\\microsoft.csharp.4.0.1.nupkg.sha512",

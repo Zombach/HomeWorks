@@ -1,0 +1,5 @@
+C:\Users\ZLoo\Source\Repos\HomeWorks\MainMenu.Tests\obj\Debug\net5.0\MainMenu.Tests.csprojAssemblyReference.cache
+C:\Users\ZLoo\Source\Repos\HomeWorks\MainMenu.Tests\obj\Debug\net5.0\MainMenu.Tests.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ZLoo\Source\Repos\HomeWorks\MainMenu.Tests\obj\Debug\net5.0\MainMenu.Tests.AssemblyInfoInputs.cache
+C:\Users\ZLoo\Source\Repos\HomeWorks\MainMenu.Tests\obj\Debug\net5.0\MainMenu.Tests.AssemblyInfo.cs
+C:\Users\ZLoo\Source\Repos\HomeWorks\MainMenu.Tests\obj\Debug\net5.0\MainMenu.Tests.csproj.CoreCompileInputs.cache

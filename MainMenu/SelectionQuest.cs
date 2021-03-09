@@ -113,15 +113,17 @@ namespace MainMenu
         private static string ConvertResult(double[] tmp)
         {
             string result = null;
-            for (int i = 0; i < tmp.Length; i++)
+            if (tmp != null)
             {
-                if (i != 0 || i == tmp.Length)
+                for (int i = 0; i < tmp.Length; i++)
                 {
-                    result += " и ";
+                    if (i != 0 || i == tmp.Length)
+                    {
+                        result += " и ";
+                    }
+                    result += Convert.ToString(tmp[i]);
                 }
-                result += Convert.ToString(tmp[i]);
             }
-
             return result;
         }
     }

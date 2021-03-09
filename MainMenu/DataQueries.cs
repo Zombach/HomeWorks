@@ -94,6 +94,8 @@ namespace MainMenu
                     break;
                 case 5:
                     programClass.dataTextClass.comPhraseString = 3;
+                    programClass.dataTextClass.answerString++;
+                    programClass.dataTextClass.answerString++;
                     count = 4;
                     break;
                 default:
