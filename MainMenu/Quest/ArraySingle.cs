@@ -61,8 +61,6 @@ namespace MainMenu.Quest
                 if (ints[i] < tmp[0])
                 {
                     tmp[0] = ints[i];
-                    //Console.WriteLine(ints[i]);
-                    //Console.WriteLine(tmp[0]);
                 }
             }
             return tmp;
