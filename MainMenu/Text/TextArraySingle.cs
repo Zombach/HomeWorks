@@ -40,8 +40,8 @@ namespace MainMenu.Text
         public static string[][] ArraySingleTextAnswers(string[][] dataText, int x = 8, int i = 0)
         {
             dataText[x][i++] = "\nОтвет: ";
-            dataText[x][i++] = "\n1";
-            dataText[x][i++] = "\n2";
+            dataText[x][i++] = "\nМинимальное значение массива: ";
+            dataText[x][i++] = "\nНайти максимальный элемент массива: ";
             dataText[x][i++] = "\n3";
             dataText[x][i++] = "\n4";
             dataText[x][i] = "\n5";

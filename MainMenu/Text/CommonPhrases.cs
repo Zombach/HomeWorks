@@ -15,9 +15,9 @@ namespace MainMenu.Text
             dataText[x][i++] = "Введите число Y1 = ";
             dataText[x][i++] = "Введите число X2 = ";
             dataText[x][i++] = "Введите число Y2 = ";
-            dataText[x][i++] = "Введите двухзначное число = ";
-            dataText[x][i++] = "\n1";
-            dataText[x][i++] = "\n2";
+            dataText[x][i++] = "Введите двухзначное число: ";
+            dataText[x][i++] = "Укажите размер массива: ";
+            dataText[x][i++] = "Укажите множитель изменения чисел массива: ";
             dataText[x][i++] = "\n3";
             dataText[x][i++] = "\n4";
             dataText[x][i++] = "\n1";

@@ -49,51 +49,42 @@ namespace MainMenu.Quest
         private static double[] Quest_1(ProgramClass programClass)
         {
             double[] tmp = new double[1];
-            tmp[0] = (5 * programClass.dataQueriesClass.number_1 + programClass.dataQueriesClass.number_2 * programClass.dataQueriesClass.number_2) /
-                (programClass.dataQueriesClass.number_2 - programClass.dataQueriesClass.number_1);
+            int[] ints = new int[programClass.dataQueriesClass.number_1];
+            for (int i = 1; i <= ints.Length; i++)
+            {
+                ints[i - 1] = i * programClass.dataQueriesClass.number_2 + programClass.dataQueriesClass.number_1;
+                Console.WriteLine(ints[i-1]);
+            }
+            tmp[0] = ints[0];
+            for (int i = 0; i < ints.Length; i++)
+            {
+                if (ints[i] < tmp[0])
+                {
+                    tmp[0] = ints[i];
+                    //Console.WriteLine(ints[i]);
+                    //Console.WriteLine(tmp[0]);
+                }
+            }
             return tmp;
-            //Random rnd = new Random();
-            //int a = rnd.Next(2, 20);
-            //int[] ints = new int[a];
-            //for (int i = 0; i < ints.Length; i++)
-            //{
-            //    ints[i] = rnd.Next(-99, 100);
-            //    Console.Write(ints[i] + " ");
-            //}
-            //int tmp = ints[0];
-            // for (int i = 0; i < ints.Length; i++)
-            //{
-            //    if (ints[i] < tmp)
-            //    {
-            //        tmp = ints[i];
-            //    }
-            //}
-            //Console.WriteLine("\n" + tmp + "\n");
         }
 
         private static double[] Quest_2(ProgramClass programClass)
         {
             double[] tmp = new double[1];
-            tmp[0] = (5 * programClass.dataQueriesClass.number_1 + programClass.dataQueriesClass.number_2 * programClass.dataQueriesClass.number_2) /
-                (programClass.dataQueriesClass.number_2 - programClass.dataQueriesClass.number_1);
+            int[] ints = new int[programClass.dataQueriesClass.number_1];
+            for (int i = 1; i <= ints.Length; i++)
+            {
+                ints[i - 1] = i * programClass.dataQueriesClass.number_2 - programClass.dataQueriesClass.number_1;
+            }
+            tmp[0] = ints[0];
+            for (int i = 0; i < ints.Length; i++)
+            {
+                if (ints[i] > tmp[0])
+                {
+                    tmp[0] = ints[i];
+                }
+            }
             return tmp;
-            //Random rnd = new Random();
-            //int a = rnd.Next(2, 20);
-            //int[] ints = new int[a];
-            //for (int i = 0; i < ints.Length; i++)
-            //{
-            //    ints[i] = rnd.Next(-99, 100);
-            //    Console.Write(ints[i] + " ");
-            //}
-            //int tmp = ints[0];
-            //for (int i = 0; i < ints.Length; i++)
-            //{
-            //    if (ints[i] > tmp)
-            //    {
-            //        tmp = ints[i];
-            //    }
-            //}
-            //Console.WriteLine("\n" + tmp + "\n");
         }
 
         private static double[] Quest_3(ProgramClass programClass)
