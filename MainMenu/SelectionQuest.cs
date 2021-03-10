@@ -77,7 +77,7 @@ namespace MainMenu
                 Fill_In.DataStringTo_2_5(dataText, programClass, tmp);
             }
 
-            if (programClass.dataTextY != 5 && programClass.section != 2)
+            if (programClass.dataTextY != 5 || programClass.section != 2)
             {
                 string result = Calculations(programClass);            
                 if (result != null)

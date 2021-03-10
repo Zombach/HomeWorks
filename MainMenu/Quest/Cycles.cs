@@ -85,133 +85,98 @@ namespace MainMenu.Quest
         private static double[] Quest_3(ProgramClass programClass)
         {
             double[] tmp = new double[1];
-            tmp[0] = (5 * programClass.dataQueriesClass.number_1 + programClass.dataQueriesClass.number_2 * programClass.dataQueriesClass.number_2) /
-                (programClass.dataQueriesClass.number_2 - programClass.dataQueriesClass.number_1);
-            return tmp;
-            //int count = 0;
-
-            //Console.Write("Введите число A = ");
-            //int a = ConsoleInPut.InPutInt();
-
-            //for (int i = 1; i <= a; i++)
-            //{
-            //    if (a > i * i)
-            //    {
-            //        count++;
-            //    }
-            //    else break;
-            //}
-            //Console.WriteLine(count);
-            //Console.WriteLine();
+            tmp[0] = 0;
+            for (int i = 1; i <= programClass.dataQueriesClass.number_1; i++)
+            {
+                if (programClass.dataQueriesClass.number_1 > i * i)
+                {
+                    tmp[0]++;
+                }
+                else break;
+            }
+            return tmp;            
         }
         private static double[] Quest_4(ProgramClass programClass)
         {
             double[] tmp = new double[1];
-            tmp[0] = (5 * programClass.dataQueriesClass.number_1 + programClass.dataQueriesClass.number_2 * programClass.dataQueriesClass.number_2) /
-                (programClass.dataQueriesClass.number_2 - programClass.dataQueriesClass.number_1);
+            for (int i = programClass.dataQueriesClass.number_1 - 1; i > 0; i--)
+            {
+                if (programClass.dataQueriesClass.number_1 % i == 0)
+                {
+                    tmp[0] = i;
+                    break;
+                }
+            }
             return tmp;
-            //int result = 0;
-
-            //Console.Write("Введите число A = ");
-            //int a = ConsoleInPut.InPutInt();
-
-            //for (int i = a - 1; i > 0; i--)
-            //{
-            //    if (a % i == 0)
-            //    {
-            //        result = i;
-            //        break;
-            //    }
-            //}
-            //Console.WriteLine(result);
-            //Console.WriteLine();
         }
         private static double[] Quest_5(ProgramClass programClass)
         {
             double[] tmp = new double[1];
-            tmp[0] = (5 * programClass.dataQueriesClass.number_1 + programClass.dataQueriesClass.number_2 * programClass.dataQueriesClass.number_2) /
-                (programClass.dataQueriesClass.number_2 - programClass.dataQueriesClass.number_1);
+            if (programClass.dataQueriesClass.number_1 > programClass.dataQueriesClass.number_2)
+            {
+                tmp[0] = programClass.dataQueriesClass.number_1;
+                programClass.dataQueriesClass.number_1 = programClass.dataQueriesClass.number_2;
+                programClass.dataQueriesClass.number_2 = (int)tmp[0];
+            }
+            tmp[0] = 0;
+            for (int i = programClass.dataQueriesClass.number_1 + 1; i < programClass.dataQueriesClass.number_2; i++)
+            {
+                if (i % 7 == 0)
+                {
+                    tmp[0] += i;
+                }
+            }
             return tmp;
-            //int tmp;
-            //int result = 0;
-
-            //Console.Write("Введите число A = ");
-            //int a = ConsoleInPut.InPutInt();
-            //Console.Write("Введите число B = ");
-            //int b = ConsoleInPut.InPutInt();
-
-            //if (a > b)
-            //{
-            //    tmp = a;
-            //    a = b;
-            //    b = tmp;
-            //}
-
-            //for (int i = a + 1; i < b; i++)
-            //{
-            //    if (i % 7 == 0)
-            //    {
-            //        result += i;
-            //    }
-            //}
-            //Console.WriteLine(result);
-            //Console.WriteLine();
         }
         private static double[] Quest_6(ProgramClass programClass)
         {
             double[] tmp = new double[1];
-            tmp[0] = (5 * programClass.dataQueriesClass.number_1 + programClass.dataQueriesClass.number_2 * programClass.dataQueriesClass.number_2) /
-                (programClass.dataQueriesClass.number_2 - programClass.dataQueriesClass.number_1);
+            programClass.dataQueriesClass.number_2 = 1;
+            programClass.dataQueriesClass.number_3 = 1;
+            if (programClass.dataQueriesClass.number_1 == 1 || programClass.dataQueriesClass.number_1 == 2)
+            {
+                tmp[0] = 1;
+                return tmp;
+            }
+
+            for (int i = 2; i < programClass.dataQueriesClass.number_1; i++)
+            {
+                tmp[0] = programClass.dataQueriesClass.number_2 + programClass.dataQueriesClass.number_3;
+                programClass.dataQueriesClass.number_2 = programClass.dataQueriesClass.number_3;
+                programClass.dataQueriesClass.number_3 = (int)tmp[0];
+            }
             return tmp;
-            //int n1 = 1;
-            //int n2 = 1;
-            //int sum = 0;
-
-            //Console.Write("Введите число N = ");
-            //int n = ConsoleInPut.InPutInt();
-
-            //if (n == 1 || n == 2)
-            //{
-            //    Console.WriteLine("1");
-            //}
-
-            //for (int i = 2; i < n; i++)
-            //{
-            //    sum = n1 + n2;
-            //    n1 = n2;
-            //    n2 = sum;
-            //}
-            //Console.WriteLine(sum + "\n");
         }
         private static double[] Quest_7(ProgramClass programClass)
         {
             double[] tmp = new double[1];
-            tmp[0] = (5 * programClass.dataQueriesClass.number_1 + programClass.dataQueriesClass.number_2 * programClass.dataQueriesClass.number_2) /
-                (programClass.dataQueriesClass.number_2 - programClass.dataQueriesClass.number_1);
+            do
+            {
+                if (programClass.dataQueriesClass.number_1 > programClass.dataQueriesClass.number_2 &&
+                    programClass.dataQueriesClass.number_1 != 0 && programClass.dataQueriesClass.number_2 != 0)
+                {
+                    programClass.dataQueriesClass.number_1 %= programClass.dataQueriesClass.number_2;
+                }
+                else if (programClass.dataQueriesClass.number_1 < programClass.dataQueriesClass.number_2 &&
+                    programClass.dataQueriesClass.number_1 != 0 && programClass.dataQueriesClass.number_2 != 0)
+                {
+                    programClass.dataQueriesClass.number_2 %= programClass.dataQueriesClass.number_1;
+                }
+                else
+                {                    
+                    break;
+                }                
+            }
+            while (programClass.dataQueriesClass.number_1 != 0 && programClass.dataQueriesClass.number_2 != 0);
+            if (programClass.dataQueriesClass.number_1 == 0)
+            {
+                tmp[0] = programClass.dataQueriesClass.number_2;
+            }
+            if (programClass.dataQueriesClass.number_2 == 0)
+            {
+                tmp[0] = programClass.dataQueriesClass.number_1;
+            }            
             return tmp;
-            //Console.Write("Введите число A = ");
-            //int a = ConsoleInPut.InPutInt();
-            //Console.Write("Введите число B = ");
-            //int b = ConsoleInPut.InPutInt();
-            //do
-            //{
-            //    if (a > b && a != 0 && b != 0)
-            //    {
-            //        a %= b;
-            //    }
-            //    else if (a < b && a != 0 && b != 0)
-            //    {
-            //        b %= a;
-            //    }
-            //    else
-            //    {
-            //        b = 0;
-            //        break;
-            //    }
-            //}
-            //while (a != 0 && b != 0);
-            //Console.Write($"Наибольший общий делитель = {a + b}");
-            //Console.WriteLine("\n");
         }
         private static double[] Quest_8(ProgramClass programClass)
         {
