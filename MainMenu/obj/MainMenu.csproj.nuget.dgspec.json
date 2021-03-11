@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Adm\\Source\\Repos\\Zombach\\HomeWorks\\MainMenu\\MainMenu.csproj": {}
+    "C:\\Users\\ZLoo\\source\\Repos\\HomeWorks\\MainMenu\\MainMenu.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Adm\\Source\\Repos\\Zombach\\HomeWorks\\MainMenu\\MainMenu.csproj": {
+    "C:\\Users\\ZLoo\\source\\Repos\\HomeWorks\\MainMenu\\MainMenu.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Adm\\Source\\Repos\\Zombach\\HomeWorks\\MainMenu\\MainMenu.csproj",
+        "projectUniqueName": "C:\\Users\\ZLoo\\source\\Repos\\HomeWorks\\MainMenu\\MainMenu.csproj",
         "projectName": "MainMenu",
-        "projectPath": "C:\\Users\\Adm\\Source\\Repos\\Zombach\\HomeWorks\\MainMenu\\MainMenu.csproj",
-        "packagesPath": "C:\\Users\\Adm\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Adm\\Source\\Repos\\Zombach\\HomeWorks\\MainMenu\\obj\\",
+        "projectPath": "C:\\Users\\ZLoo\\source\\Repos\\HomeWorks\\MainMenu\\MainMenu.csproj",
+        "packagesPath": "C:\\Users\\ZLoo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ZLoo\\source\\Repos\\HomeWorks\\MainMenu\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Adm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ZLoo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"

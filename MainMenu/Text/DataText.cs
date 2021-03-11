@@ -81,7 +81,7 @@ namespace MainMenu.Text
             dataText[i++] = new string[14]; //5
             dataText[i++] = new string[12];  //6
             dataText[i++] = new string[12]; //7
-            dataText[i++] = new string[6];  //8
+            dataText[i++] = new string[11];  //8
             dataText[i++] = new string[8];  //9
             dataText[i++] = new string[12]; //10
             dataText[i++] = new string[27]; //11
