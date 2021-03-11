@@ -30,7 +30,7 @@ namespace MainMenu.Tests
         [TestCase(new int[] { 56, 7 }, new double[] { 7 })]
         public void Quest_2(int[] Number, double[] expected)
         {
-            programClass.dataTextY = 2;
+            programClass.dataTextY =2 ;
             programClass.dataQueriesClass.number_1 = Number[0];
             programClass.dataQueriesClass.number_2 = Number[1];
             double[] actual = new double[2];
