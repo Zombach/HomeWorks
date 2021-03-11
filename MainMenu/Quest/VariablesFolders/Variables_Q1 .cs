@@ -3,7 +3,7 @@ using MainMenu.Text;
 
 namespace MainMenu.Quest.VariablesFolders
 {
-    public static class VariablesQ_1
+    public static class Variables_Q1
     {
         public static double[] Quest(ProgramClass programClass)
         {

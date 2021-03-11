@@ -23,7 +23,7 @@ namespace MainMenu.Quest
                     break;
                 case 5:
                     tmp = Variables_Q5.Quest(programClass);
-                    break;
+                    break;                
                 default:
                     break;
             }
