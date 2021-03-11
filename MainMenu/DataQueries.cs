@@ -191,25 +191,25 @@ namespace MainMenu
                     count = 2;
                     break;
                 case 4:
-                    count = 3;
+                    count = 2;
                     break;
                 case 5:
-                    count = 4;
+                    count = 2;
                     break;
                 case 6:
-                    count = 1;
+                    count = 2;
                     break;
                 case 7:
-                    count = 1;
+                    count = 2;
                     break;
                 case 8:
-                    count = 1;
+                    count = 2;
                     break;
                 case 9:
-                    count = 1;
+                    count = 2;
                     break;
                 case 10:
-                    count = 1;
+                    count = 2;
                     break;        
                 default:
                     break;
