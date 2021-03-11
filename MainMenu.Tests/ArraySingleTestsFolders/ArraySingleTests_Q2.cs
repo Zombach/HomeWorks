@@ -1,33 +1,21 @@
 ﻿using NUnit.Framework;
-using MainMenu.Quest;
-using MainMenu.Text;
-using System;
+using MainMenu.Quest.ArraySingleFolders;
 
 namespace MainMenu.Tests.ArraySingleTestsFolders
 {
- 
-    
-    public class ArraySingle_Q1Tests
-    {
-        ProgramClass programClass = new ProgramClass()
-        {
-            section = 4,
-            dataTextX = 4,
-            dataQueriesClass = DataQueries.DataQueriesC(),
-            dataTextClass = DataText.DataTextC()
-        };
 
-        [TestCase(new int[] { 11, 22 }, new double[] { 24 })]
-        [TestCase(new int[] { 21, 42 }, new double[] { 49 })]
-        [TestCase(new int[] { 1, 23 }, new double[] { 89 })]
-        public void Quest(int[] Number, double[] expected)
+
+    public class ArraySingleTests_Q2
+    {
+        [TestCase(1, new double[] { 659 })]
+        [TestCase(12, new double[] { 355 })]
+        [TestCase(13, new double[] { 55 })]
+        public void Quest(int number, double[] expected)
         {
-            programClass.dataTextY = 1;
-            programClass.dataQueriesClass.number_1 = Number[0];
-            programClass.dataQueriesClass.number_2 = Number[1];
+            int[] ints = GetMockArraySingleTests.GetMock(number);
             double[] actual = new double[1];
-            actual = ArraySingle.QuestAll(programClass);
+            actual = ArraySingle_Q2.Quest(ints);
             Assert.AreEqual(expected, actual);
-        }        
-    }
+        }
+    }    
 }

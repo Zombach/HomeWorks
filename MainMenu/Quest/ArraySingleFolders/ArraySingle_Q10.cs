@@ -4,7 +4,7 @@
     {
         public static double[] Quest(int[] ints)
         {
-            double[] tmp = new double[1];
+            double[] tmp = new double[ints.Length];
             int tmp2 = 0;
             for (int i = 0; i < ints.Length - 1; i++)
             {
