@@ -29,7 +29,10 @@
                     }
                 }
             }
-            tmp.CopyTo(ints, 0);
+            for (int i = 0; i < ints.Length; i++)
+            {
+                tmp[i] = ints[i];
+            }
             return tmp;
         }
     }

@@ -1,16 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MainMenu.Tests.ArraySingleTestsFolders
+﻿namespace MainMenu.Tests.ArraySingleTestsFolders
 {
     class GetMockArraySingleTests
     {
         public static int[] GetMock(int number)
         {
-            int[] result = new int[0];
+            int[] result = null;
             switch (number)
             {
                 case 1:
@@ -76,7 +70,6 @@ namespace MainMenu.Tests.ArraySingleTestsFolders
                 default:
                     break;
             }
-
             return result;
         }
     }
