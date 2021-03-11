@@ -1,75 +1,28 @@
-﻿using System;
-
-namespace MainMenu.Quest.ArrayTwoDimensionalFolders
+﻿namespace MainMenu.Quest.ArrayTwoDimensionalFolders
 {
     public static class ArrayTwoDimensional_Q6
     {
-        public static double[] Quest(ProgramClass programClass)
+        public static double[] Quest(int[,] ints)
         {
-            double[] tmp = new double[1];
-            tmp[0] = (5 * programClass.dataQueriesClass.number_1 + programClass.dataQueriesClass.number_2 * programClass.dataQueriesClass.number_2) /
-                (programClass.dataQueriesClass.number_2 - programClass.dataQueriesClass.number_1);
+            double[] tmp = new double[ints.GetLength(0) * ints.GetLength(1) + 1];
+            int[,] temp = new int[ints.GetLength(1), ints.GetLength(0)];
+            for (int i = 0; i < ints.GetLength(1); i++)
+            {
+                for (int j = 0; j < ints.GetLength(0); j++)
+                {
+                    temp[i, j] = ints[j, i];
+                }
+            }
+            int count = 0;
+            for (int i = 0; i < ints.GetLength(0); i++)
+            {
+                for (int j = 0; j < ints.GetLength(1); j++)
+                {
+                    tmp[count++] = ints[i, j];
+                }
+            }
+            tmp[tmp.Length - 1] = ints.GetLength(0);
             return tmp;
-            //Random rnd = new Random();
-            //int a = rnd.Next(2, 10);
-            //int n;
-            //int[][] ints = new int[a][];
-            //for (int i = 0; i < ints.Length; i++)
-            //{
-            //    n = rnd.Next(2, 10);
-            //    ints[i] = new int[n];
-            //    Console.WriteLine();
-            //    for (int j = 0; j < ints[i].Length; j++)
-            //    {
-            //        ints[i][j] = rnd.Next(1, 100);
-            //        Console.Write(ints[i][j] + " ");
-            //    }
-            //}
-            //Console.WriteLine();
-            //int x = 0;
-            //int tmp = 0;
-            //int tmpY = 0;
-
-            //bool bo = false;
-            //do
-            //{
-            //    for (int i = 0; i < ints[x].Length - 1; i++)
-            //    {
-            //        if (x == i)
-            //        {
-            //            bo = true;
-            //            do
-            //            {
-            //                tmp = ints[x][i];
-            //                try
-            //                {
-            //                    ints[x][i] = ints[ints.Length - 1 - x - tmpY][ints.Length - 1 - x - tmpY];
-            //                    ints[ints.Length - 1 - x - tmpY][ints.Length - 1 - x - tmpY] = tmp;
-            //                    bo = false;
-            //                }
-            //                catch
-            //                {
-            //                    tmpY++;
-            //                }
-            //            }
-            //            while (bo);
-            //        }
-            //    }
-            //    x++;
-            //}
-            //while (x < a/2);
-
-
-
-            //for (int i = 0; i < ints.Length; i++)
-            //{
-            //    Console.WriteLine();
-            //    for (int j = 0; j < ints[i].Length; j++)
-            //    {
-            //        Console.Write(ints[i][j] + " ");
-            //    }
-            //}
-            //Console.WriteLine();
         }
     }
 }

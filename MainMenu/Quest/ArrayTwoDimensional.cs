@@ -1,4 +1,5 @@
 ﻿using MainMenu.Quest.ArrayTwoDimensionalFolders;
+using MainMenu.Quest.GenerateMassive;
 
 namespace MainMenu.Quest
 {
@@ -6,26 +7,33 @@ namespace MainMenu.Quest
     {
         public static double[] QuestAll(ProgramClass programClass)
         {
+            int[,] ints;
             double[] tmp = null;
             switch (programClass.dataTextY)
             {
                 case 1:
-                    tmp = ArrayTwoDimensional_Q1.Quest(programClass);
+                    ints = GenerateMassive_TwoDimensional.MassiveToQAll(programClass);
+                    tmp = ArrayTwoDimensional_Q1.Quest(ints);
                     break;
                 case 2:
-                    tmp = ArrayTwoDimensional_Q2.Quest(programClass);
+                    ints = GenerateMassive_TwoDimensional.MassiveToQAll(programClass);
+                    tmp = ArrayTwoDimensional_Q2.Quest(ints);
                     break;
                 case 3:
-                    tmp = ArrayTwoDimensional_Q3.Quest(programClass);
+                    ints = GenerateMassive_TwoDimensional.MassiveToQAll(programClass);
+                    tmp = ArrayTwoDimensional_Q3.Quest(ints);
                     break;
                 case 4:
-                    tmp = ArrayTwoDimensional_Q4.Quest(programClass);
+                    ints = GenerateMassive_TwoDimensional.MassiveToQAll(programClass);
+                    tmp = ArrayTwoDimensional_Q4.Quest(ints);
                     break;
                 case 5:
-                    tmp = ArrayTwoDimensional_Q5.Quest(programClass);
+                    ints = GenerateMassive_TwoDimensional.MassiveToQAll(programClass);
+                    tmp = ArrayTwoDimensional_Q5.Quest(ints);
                     break;
                 case 6:
-                    tmp = ArrayTwoDimensional_Q6.Quest(programClass);
+                    ints = GenerateMassive_TwoDimensional.MassiveToQAll(programClass);
+                    tmp = ArrayTwoDimensional_Q6.Quest(ints);
                     break;
                 default:
                     break;

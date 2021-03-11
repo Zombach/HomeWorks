@@ -1,60 +1,30 @@
-﻿using System;
-
-namespace MainMenu.Quest.ArrayTwoDimensionalFolders
+﻿namespace MainMenu.Quest.ArrayTwoDimensionalFolders
 {
     public static class ArrayTwoDimensional_Q5
     {
-        public static double[] Quest(ProgramClass programClass)
+        public static double[] Quest(int[,] ints)
         {
             double[] tmp = new double[1];
-            tmp[0] = (5 * programClass.dataQueriesClass.number_1 + programClass.dataQueriesClass.number_2 * programClass.dataQueriesClass.number_2) /
-                (programClass.dataQueriesClass.number_2 - programClass.dataQueriesClass.number_1);
-            return tmp;
-            //Random rnd = new Random();
-            //int a = rnd.Next(2, 10);
-            //int n;
-            //int[][] ints = new int[a][];
-            //for (int i = 0; i < ints.Length; i++)
-            //{
-            //    n = rnd.Next(2, 10);
-            //    ints[i] = new int[n];
-            //    Console.WriteLine();
-            //    for (int j = 0; j < ints[i].Length; j++)
-            //    {
-            //        ints[i][j] = rnd.Next(1, 100);
-            //        Console.Write(ints[i][j] + " ");
-            //    }
-            //}
-            //int x = 0;
-            //int tmp = ints[0][0];
-            //int count = 0;
-            //string str = "";
-            //do
-            //{
-            //    for (int i = 0; i < ints[x].Length; i++)
-            //    {
-            //        if (x == 0 && i == 0)
-            //        {
-            //            //if ()
-            //        }
-            //        else if (x == 0 && i == ints[x].Length - 1)
-            //        {
+            tmp[0] = 0;
+            for(int i = 0; i < ints.GetLength(0); i++)
+            {
+                for(int j = 0; i < ints.GetLength(1); j++)
+                {
+                    int a = i - 1;
+                    int b = j + 1;
+                    int c = i + 1;
+                    int d = j - 1;
 
-            //        }
-            //        else if (x == ints.Length - 1 && i == 0)
-            //        {
-                    
-            //        }
-            //        else if (x == ints.Length - 1 && i == ints[x].Length - 1)
-            //        {
-
-            //        }
-            //    }
-            //    x++;
-            //}
-            //while (x < a);
-            //Console.WriteLine($"\nКолличество элементов массива, которые больше всех своих соседей одновременно = {count}\n" +
-            //    $"Значения этих элементов {str}");
+                    if ((a < 0 || ints[i, j] > ints[i - 1, j])
+                        && (b >= ints.GetLength(1) || ints[i, j] > ints[i, j + 1])
+                        && (c >= ints.GetLength(0) || ints[i, j] > ints[i + 1, j])
+                        && (d < 0 || ints[i, j] > ints[i, j - 1]))
+                    {
+                        tmp[0]++;
+                    }
+                }
+            }
+            return tmp;            
         }
     }
 }

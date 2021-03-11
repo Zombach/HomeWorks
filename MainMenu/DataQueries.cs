@@ -231,13 +231,13 @@ namespace MainMenu
                     count = 2;
                     break;
                 case 4:
-                    count = 3;
+                    count = 2;
                     break;
                 case 5:
-                    count = 4;
+                    count = 2;
                     break;
                 case 6:
-                    count = 4;
+                    count = 2;
                     break;
                 default:
                     break;
