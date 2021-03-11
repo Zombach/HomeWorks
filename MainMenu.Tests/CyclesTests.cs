@@ -22,7 +22,7 @@ namespace MainMenu.Tests
             programClass.dataQueriesClass.number_1 = Number[0];
             programClass.dataQueriesClass.number_2 = Number[1];
             double[] actual = new double[1];
-            actual = Cycles.QuestAll(programClass);
+            actual = CyclesQ.QuestAll(programClass);
             Assert.AreEqual(expected, actual);
         }
         [TestCase(new int[] { 11, 22 }, new double[] { 24 })]
@@ -34,7 +34,7 @@ namespace MainMenu.Tests
             programClass.dataQueriesClass.number_1 = Number[0];
             programClass.dataQueriesClass.number_2 = Number[1];
             double[] actual = new double[1];
-            actual = Cycles.QuestAll(programClass);
+            actual = CyclesQ.QuestAll(programClass);
             Assert.AreEqual(expected, actual);
         }
         [TestCase(new int[] { 11, 22 }, new double[] { 24 })]
@@ -46,7 +46,7 @@ namespace MainMenu.Tests
             programClass.dataQueriesClass.number_1 = Number[0];
             programClass.dataQueriesClass.number_2 = Number[1];
             double[] actual = new double[1];
-            actual = Cycles.QuestAll(programClass);
+            actual = CyclesQ.QuestAll(programClass);
             Assert.AreEqual(expected, actual);
         }
         [TestCase(new int[] { 11, 22 }, new double[] { 24 })]
@@ -58,7 +58,7 @@ namespace MainMenu.Tests
             programClass.dataQueriesClass.number_1 = Number[0];
             programClass.dataQueriesClass.number_2 = Number[1];
             double[] actual = new double[1];
-            actual = Cycles.QuestAll(programClass);
+            actual = CyclesQ.QuestAll(programClass);
             Assert.AreEqual(expected, actual);
         }
         [TestCase(new int[] { 11, 22 }, new double[] { 24 })]
@@ -70,7 +70,7 @@ namespace MainMenu.Tests
             programClass.dataQueriesClass.number_1 = Number[0];
             programClass.dataQueriesClass.number_2 = Number[1];
             double[] actual = new double[1];
-            actual = Cycles.QuestAll(programClass);
+            actual = CyclesQ.QuestAll(programClass);
             Assert.AreEqual(expected, actual);
         }
         [TestCase(new int[] { 11, 22 }, new double[] { 24 })]
@@ -82,7 +82,7 @@ namespace MainMenu.Tests
             programClass.dataQueriesClass.number_1 = Number[0];
             programClass.dataQueriesClass.number_2 = Number[1];
             double[] actual = new double[1];
-            actual = Cycles.QuestAll(programClass);
+            actual = CyclesQ.QuestAll(programClass);
             Assert.AreEqual(expected, actual);
         }
         [TestCase(new int[] { 11, 22 }, new double[] { 24 })]
@@ -94,7 +94,7 @@ namespace MainMenu.Tests
             programClass.dataQueriesClass.number_1 = Number[0];
             programClass.dataQueriesClass.number_2 = Number[1];
             double[] actual = new double[1];
-            actual = Cycles.QuestAll(programClass);
+            actual = CyclesQ.QuestAll(programClass);
             Assert.AreEqual(expected, actual);
         }
         [TestCase(new int[] { 11, 22 }, new double[] { 24 })]
@@ -106,7 +106,7 @@ namespace MainMenu.Tests
             programClass.dataQueriesClass.number_1 = Number[0];
             programClass.dataQueriesClass.number_2 = Number[1];
             double[] actual = new double[1];
-            actual = Cycles.QuestAll(programClass);
+            actual = CyclesQ.QuestAll(programClass);
             Assert.AreEqual(expected, actual);
         }
         [TestCase(new int[] { 11, 22 }, new double[] { 24 })]
@@ -118,7 +118,7 @@ namespace MainMenu.Tests
             programClass.dataQueriesClass.number_1 = Number[0];
             programClass.dataQueriesClass.number_2 = Number[1];
             double[] actual = new double[1];
-            actual = Cycles.QuestAll(programClass);
+            actual = CyclesQ.QuestAll(programClass);
             Assert.AreEqual(expected, actual);
         }
         [TestCase(new int[] { 11, 22 }, new double[] { 24 })]
@@ -130,7 +130,7 @@ namespace MainMenu.Tests
             programClass.dataQueriesClass.number_1 = Number[0];
             programClass.dataQueriesClass.number_2 = Number[1];
             double[] actual = new double[1];
-            actual = Cycles.QuestAll(programClass);
+            actual = CyclesQ.QuestAll(programClass);
             Assert.AreEqual(expected, actual);
         }
         [TestCase(new int[] { 11, 22 }, new double[] { 24 })]
@@ -142,7 +142,7 @@ namespace MainMenu.Tests
             programClass.dataQueriesClass.number_1 = Number[0];
             programClass.dataQueriesClass.number_2 = Number[1];
             double[] actual = new double[1];
-            actual = Cycles.QuestAll(programClass);
+            actual = CyclesQ.QuestAll(programClass);
             Assert.AreEqual(expected, actual);
         }
         [TestCase(new int[] { 11, 22 }, new double[] { 24 })]
@@ -154,7 +154,7 @@ namespace MainMenu.Tests
             programClass.dataQueriesClass.number_1 = Number[0];
             programClass.dataQueriesClass.number_2 = Number[1];
             double[] actual = new double[1];
-            actual = Cycles.QuestAll(programClass);
+            actual = CyclesQ.QuestAll(programClass);
             Assert.AreEqual(expected, actual);
         }
     }
