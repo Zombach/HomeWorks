@@ -1,6 +1,6 @@
 ﻿namespace MainMenu.Tests.ArrayTwoDimensionalTestsFolders
 {
-    class GetMockArrayTwoDimensionalTests
+    public class GetMockArrayTwoDimensionalTests
     {
         public static int[,] GetMock(int number)
         { 

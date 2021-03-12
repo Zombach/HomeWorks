@@ -10,7 +10,7 @@ namespace MainMenu.Quest
             switch (programClass.dataTextY)
             {
                 case 1:
-                    tmp = VariablesQ_1.Quest(programClass);
+                    tmp = Variables_Q1.Quest(programClass);
                     break;
                 case 2:
                     tmp = Variables_Q2.Quest(programClass);

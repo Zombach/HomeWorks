@@ -13,8 +13,7 @@ namespace MainMenu.Tests.ArraySingleTestsFolders
         public void Quest(int number, double[] expected)
         {
             int[] ints = GetMockArraySingleTests.GetMock(number);
-            double[] actual = new double[ints.Length];
-            actual = ArraySingle_Q8.Quest(ints);
+            double[] actual = ArraySingle_Q8.Quest(ints);
             Assert.AreEqual(expected, actual);
         }
     }
