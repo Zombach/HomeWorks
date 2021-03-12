@@ -7,13 +7,19 @@ namespace MainMenu.Tests.ArrayTwoDimensionalTestsFolders
 
     public class ArrayTwoDimensionalTests_Q6
     {
-        [TestCase(10, new double[] { 1, 1, 2, 3, 4, 5, 50, 61, 548, 659, 3234 })]
-        [TestCase(19, new double[] { -5, 4, 20, 35, 50 })]
-        [TestCase(18, new double[]  { 1, 2, 4, 5, 61, 234, 548, 659, 3, 3 })]
-        public void Quest(int number, double[] expected)
+        [TestCase(10)]
+        [TestCase(19)]
+        [TestCase(18)]
+        public void Quest(int number)
         {
+            int[,] expected = new int[,]
+            {
+                { 1, 5, 548 },
+                { 2, 61, 659 },
+                { 4, 234, 3 }
+            };
             int[,] ints = GetMockArrayTwoDimensionalTests.GetMock(number);
-            double[] actual = ArrayTwoDimensional_Q6.Quest(ints);
+            int[,] actual = ArrayTwoDimensional_Q6.Quest(ints);
             Assert.AreEqual(expected, actual);
         }
     }
