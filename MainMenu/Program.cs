@@ -25,16 +25,7 @@ namespace MainMenu
             programClass.dataTextY = dataTextY;            
             return programClass;
         }
-        public static ProgramClass PC_Section(ProgramClass programClass)
-        {
-            programClass.section = programClass.dataTextX;
-            return programClass;
-        }
-        public static ProgramClass PC_DT_X(int dataTextX)
-        {
-            programClass.dataTextX = dataTextX;
-            return programClass;
-        }
+ 
         public static ProgramClass PC_DT_Y(int dataTextY)
         {
             programClass.dataTextY = dataTextY;

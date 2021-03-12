@@ -89,6 +89,11 @@ namespace MainMenu
                     Fill_In.StringOut(dataText, programClass);
                 }
             }
+            if (programClass.dataTextY == 6 && programClass.section == 5)
+            {
+                int[,] tmp = ArrayTwoDimensional.Quest6(programClass);
+                Fill_In.OutputIntMassiveTwoDim(dataText, tmp);
+            }
             //string resultTmp = Calculations(programClass);
         }
 

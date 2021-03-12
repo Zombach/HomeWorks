@@ -64,15 +64,16 @@ namespace MainMenu
             }
         }
 
-        public static void OutputTmpString(string[][] dataText, string[,] tmp = null)
+        public static void OutputIntMassiveTwoDim(string[][] dataText, int[,] tmp = null)
         {
-            Console.Write("\n" + dataText[Program.dataTextClass.comPhrase][16] + " :");
+            Console.Write("\n" + dataText[Program.dataTextClass.comPhrase][0] + ": \n");
             for (int i = 0; i < tmp.GetLength(0); i++)
             {
                 for (int j = 0; j < tmp.GetLength(1); j++)
                 {
-
+                    Console.Write(tmp[i, j] + " ");
                 }
+                Console.WriteLine();
             }
         }
     }
