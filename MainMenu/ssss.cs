@@ -8,11 +8,8 @@ namespace MainMenu
     public class ssss
     {
 
-        public static void Test()
-        {
-            int[] arrayX = { 1, 2, 5, 8, 4, 7, 1, 1, 1 };
-            int[] arrayY = { 1, 1, 9, 9, 4, 5 };
-            
+        public static int Test(int[] arrayX, int[] arrayY)
+        {            
             int indexY = 0;
             int count = 0;
             for (int i = 0; i < arrayX.Length; i++)
@@ -43,8 +40,7 @@ namespace MainMenu
                     i = -1;
                 }
             }
-            Console.WriteLine(count);
-
+            return count;
         }
     }
 }

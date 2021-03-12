@@ -32,19 +32,20 @@ namespace MainMenu.Quest
                     tmp = ArrayTwoDimensional_Q5.Quest(ints);
                     break;
                 case 6:
-                    Quest6(programClass);
+                    tmp = null;
                     break;
                 default:
                     break;
             }
             return tmp;
         }
-        public static void Quest6(ProgramClass programClass)
+        public static int[,] Quest6(ProgramClass programClass)
         {
             int[,] ints;
             int[,] tmp = null;
             ints = GenerateMassive_TwoDimensional.MassiveToQAll(programClass);
             tmp = ArrayTwoDimensional_Q6.Quest(ints);
+            return tmp;
         }
     }
 }

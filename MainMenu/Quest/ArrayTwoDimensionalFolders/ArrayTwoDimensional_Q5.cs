@@ -8,7 +8,7 @@
             tmp[0] = 0;
             for(int i = 0; i < ints.GetLength(0); i++)
             {
-                for(int j = 0; i < ints.GetLength(1); j++)
+                for(int j = 0; j < ints.GetLength(1); j++)
                 {
                     int a = i - 1;
                     int b = j + 1;
@@ -24,7 +24,7 @@
                     }
                 }
             }
-            return tmp;            
+            return tmp;
         }
     }
 }

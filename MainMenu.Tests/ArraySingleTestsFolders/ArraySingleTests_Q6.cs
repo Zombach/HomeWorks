@@ -3,17 +3,18 @@ using MainMenu.Quest.ArraySingleFolders;
 
 namespace MainMenu.Tests.ArraySingleTestsFolders
 {
- 
-    
     public class ArraySingleTests_Q6
     {
-        [TestCase(16, new double[] { 55, -1, 8, 20, 4 })]
-        [TestCase(20, new double[] { 0, 3, 659, 548, 3, 50, 3, 50, 8, 1})]
-        [TestCase(3, new double[] { 55, -3, 8, 22, 4 })]
-        public void Quest(int number, double[] expected)
+        [TestCase(1)]
+        [TestCase(2)]
+        [TestCase(3)]
+        [TestCase(4)]
+        [TestCase(5)]
+        public void Quest(int numberMock)
         {
-            int[] ints = GetMockArraySingleTests.GetMock(number);
+            int[] ints = GetMockArraySingleTests.GetMock(numberMock);
             double[] actual = ArraySingle_Q6.Quest(ints);
+            double[] expected = GetMockArraySingleTests.GetExpectedMock_Q6(numberMock);
             Assert.AreEqual(expected, actual);
         }
     }
