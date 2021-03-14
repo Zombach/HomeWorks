@@ -5,12 +5,16 @@ namespace MainMenu.Tests.CyclesTestsFolders
 {
     class CyclesTests_Q2
     {
-        [TestCase(1, new double[] { 9 })]
-        [TestCase(4, new double[] { 31 })]
-        public void Quest(int number, double[] expected)
+        //[TestCase(1)]
+        //[TestCase(2)]
+        //[TestCase(3)]
+        //[TestCase(4)]
+        //[TestCase(5)]
+        public void Quest(int numberMock)
         {
-            ProgramClass programClass = GetMockCyclesTests.GetMock(number);
+            ProgramClass programClass = GetMockCyclesTests.GetMock(numberMock);
             double[] actual = Cycles_Q2.Quest(programClass);
+            double[] expected = GetMockCyclesTests.GetExpectedMock_Q2(numberMock);
             Assert.AreEqual(expected, actual);
         }
     }

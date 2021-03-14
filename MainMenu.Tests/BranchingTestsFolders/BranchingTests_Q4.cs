@@ -1,17 +1,20 @@
 ﻿using NUnit.Framework;
 using MainMenu.Quest.BranchingFolders;
+using MainMenu.Tests.VariablesTestsFolders;
 
 namespace MainMenu.Tests.BranchingTestsFolders
 {
     class BranchingTests_Q4
     {
-        [TestCase(1, new double[] { 9 })]
-        [TestCase(4, new double[] { 31 })]
-        public void Quest(int number, double[] expected)
+        [TestCase(6)]
+        [TestCase(7)]
+        [TestCase(8)]
+        public void Quest(int numberMock)
         {
-            ProgramClass programClass = GetMockBranchingTests.GetMock(number);
+            ProgramClass programClass = GetMockBranchingTests.GetMock(numberMock);
             double[] actual = Branching_Q4.Quest(programClass);
-            Assert.AreEqual(expected, actual);
+            double[] expected = GetMockBranchingTests.GetExpectedMock_Q4(numberMock);
+            DeltaFor.Delta(expected, actual);
         }
     }
 }

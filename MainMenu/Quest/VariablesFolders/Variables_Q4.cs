@@ -7,6 +7,10 @@ namespace MainMenu.Quest.VariablesFolders
     {
         public static double[] Quest(ProgramClass programClass)
         {
+            if (programClass.dataQueriesClass.number_1 == 0)
+            {
+                throw new DivideByZeroException("Делить на 0 нельзя");
+            }
             double[] tmp = new double[1];
             if (programClass.dataQueriesClass.number_1 == 0)
             {
